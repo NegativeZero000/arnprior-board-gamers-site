@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/core.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <script src="js/navigation.js" defer></script>
+        <script src="js/darkmode.js" defer></script>
+        <title>arnprior-board-gamers-site</title>
+    </head>
+    <body>
+        <header id="cs-navigation">
+            <div class="cs-container">
+                <!--Nav Logo-->
+                <a href="" class="cs-logo" aria-label="Return to [Company Name] Home page">
+                    <img
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg"
+                        alt=""
+                        width="210"
+                        height="29"
+                        aria-hidden="true"
+                        decoding="async"
+                    />
+                </a>
+                <!--Navigation List-->
+                <nav class="cs-nav" aria-label="main navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button
+                        class="cs-toggle"
+                        id="mobile-menu-toggle"
+                        aria-expanded="false"
+                        aria-controls="cs-ul-wrapper"
+                        aria-label="mobile menu toggle"
+                        aria-haspopup="menu"
+                    >
+                        <span class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1"></span>
+                            <span class="cs-line cs-line2"></span>
+                            <span class="cs-line cs-line3"></span>
+                        </span>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="cs-ul-wrapper" id="cs-ul-wrapper">
+                        <ul class="cs-ul">
+                            <li class="cs-li">
+                                <a href="index.html" class="cs-li-link"> Home </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="about.html" class="cs-li-link cs-active" aria-current="page"> About Us </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="gallery.html" class="cs-li-link"> Gallery </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+                <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+                <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
+                    <svg
+                        class="cs-moon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 480 480"
+                        style="enable-background: new 0 0 480 480"
+                        xml:space="preserve"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"
+                        />
+                    </svg>
+                    <img
+                        class="cs-sun"
+                        aria-hidden="true"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg"
+                        decoding="async"
+                        alt=""
+                        width="15"
+                        height="15"
+                    />
+                </button>
+            </div>
+        </header>
+        <!-- ============================================ -->
+        <!--             Side By Side Reverse             -->
+        <!-- ============================================ -->
+
+        <section id="sbsr-1475">
+            <div class="cs-container">
+                <!-- Left Image Section -->
+                <div class="cs-image-group">
+                    <!--Floating Box-->
+                    <div class="cs-box">
+                        <!--Blob-->
+                        <img
+                            class="cs-blob"
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/blob-shape3.svg"
+                            alt="blob"
+                            width="254"
+                            height="238"
+                            aria-hidden="true"
+                        />
+                        <span class="cs-number">100%</span>
+                        <span class="cs-desc">Satisfaction Rating</span>
+                    </div>
+                    <!--Big Background Image-->
+                    <picture class="cs-picture">
+                        <source
+                            media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/girl.jpg"
+                        />
+                        <source
+                            media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/girl.jpg"
+                        />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/girl.jpg"
+                            alt="girl"
+                            width="542"
+                            height="720"
+                            aria-hidden="true"
+                        />
+                    </picture>
+                    <!--Oval-->
+                    <img
+                        class="cs-oval"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/oval.svg"
+                        alt="oval"
+                        width="727"
+                        height="480"
+                        aria-hidden="true"
+                    />
+                </div>
+                <!-- Right Content Section-->
+                <div class="cs-content">
+                    <span class="cs-topper">About Stitch Day Care</span>
+                    <h2 class="cs-title">Welcome To Baby Care and Kindergarten</h2>
+                    <p class="cs-text">
+                        Stitch day care is a place where you can keep your baby with peace in your mind when you are
+                        working in your office for the better future of your child. We promise to take care of your
+                        child’s social, emotional, intellectual and physical needs with sensitive care and we also
+                        ensure you their security with our life.
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img
+                                class="cs-icon"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                                alt="checkmark"
+                                width="24"
+                                height="24"
+                            />
+                            Our job is to make your life easier.
+                        </li>
+                        <li class="cs-li">
+                            <img
+                                class="cs-icon"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                                alt="checkmark"
+                                width="24"
+                                height="24"
+                            />
+                            Experience childcare as it should be.
+                        </li>
+                        <li class="cs-li">
+                            <img
+                                class="cs-icon"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                                alt="checkmark"
+                                width="24"
+                                height="24"
+                            />
+                            We are childcare professionals.
+                        </li>
+                        <li class="cs-li">
+                            <img
+                                class="cs-icon"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                                alt="checkmark"
+                                width="24"
+                                height="24"
+                            />
+                            Digital Clean Checklist Prepared New Year
+                        </li>
+                        <li class="cs-li">
+                            <img
+                                class="cs-icon"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/green-check.svg"
+                                alt="checkmark"
+                                width="24"
+                                height="24"
+                            />
+                            Babysitting with immense love and care.
+                        </li>
+                    </ul>
+                    <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

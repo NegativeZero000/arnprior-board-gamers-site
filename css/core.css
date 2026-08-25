@@ -7,6 +7,7 @@
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
+    --dark: #1a1a1a;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -19,6 +20,11 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #fff;
+}
+
+body.dark-mode {
+    background-color: var(--dark);
 }
 
 *, *:before, *:after {
