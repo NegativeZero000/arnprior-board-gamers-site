@@ -498,7 +498,7 @@
     #cs-navigation .cs-social {
         height: 2rem;
         opacity: 1;
-        display: none;
+        display: flex;
         visibility: visible;
         justify-content: center;
         align-items: center;
@@ -527,7 +527,7 @@
         filter: grayscale(1) brightness(10000%);
     }
     #cs-navigation .cs-social-icon {
-        width: 0.75rem;
+        width: 1.25rem;
         height: auto;
         opacity: 0.6;
         display: block;
@@ -535,11 +535,11 @@
     }
 }
 /* Large Desktop - 1300px */
-@media only screen and (min-width: 1300px) {
+/* @media only screen and (min-width: 1300px) {
     #cs-navigation .cs-social {
         display: flex;
     }
-}
+} */
 /* Dark Mode */
 @media only screen and (min-width: 1024px) {
     body.dark-mode #cs-navigation {
