@@ -15,7 +15,7 @@
                 <!--Nav Logo-->
                 <a href="index.html" class="cs-logo" aria-label="return to home page">
                     <img
-                        src="src/assets/abg_logo_w_text.svg"
+                        src="src/assets/icons/abg_logo_w_text.svg"
                         alt=""
                         width="400"
                         height="100"
@@ -55,6 +55,32 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="cs-contact-group">
+                    <div class="cs-social">
+                        <a href="" class="cs-social-link" aria-label="Visit our Facebook page">
+                            <img
+                                class="cs-social-icon"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg"
+                                alt=""
+                                width="12"
+                                height="12"
+                                aria-hidden="true"
+                                decoding="async"
+                            />
+                        </a>
+                        <a href="" class="cs-social-link" aria-label="Visit our Discord server">
+                            <img
+                                class="cs-social-icon"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/discord1a.svg"
+                                alt=""
+                                width="12"
+                                height="12"
+                                aria-hidden="true"
+                                decoding="async"
+                            />
+                        </a>
+                    </div>
+                </div>
                 <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
                 <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
                     <svg
@@ -99,18 +125,12 @@
 
             <!-- Background Image -->
             <picture class="cs-background">
-                <source
-                    media="(max-width: 600px)"
-                    srcset="src/assets/hero.jpg"
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="src/assets/hero.jpg"
-                />
+                <source media="(max-width: 600px)" srcset="src/assets/images/hero.jpg" />
+                <source media="(min-width: 601px)" srcset="src/assets/images/hero.jpg" />
                 <img
                     loading="lazy"
                     decoding="async"
-                    src="src/assets/hero.jpg"
+                    src="src/assets/images/hero.jpg"
                     alt="field"
                     width="1920"
                     height="1200"
@@ -120,7 +140,7 @@
 
             <img
                 class="cs-graphic"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg"
+                src="src/assets/icons/white-splatter.svg"
                 alt="graphic"
                 height="161"
                 width="1920"
@@ -130,7 +150,7 @@
             <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
             <img
                 class="cs-graphic cs-graphic-dark"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg"
+                src="src/assets/icons/dark-splatter.svg"
                 alt="graphic"
                 height="161"
                 width="1920"

@@ -3,7 +3,8 @@ const siteConfig = {
     tagline: "Best Community Group in Town",
     description: "A weekly meet up to socialize, hang out and most importantly, play board games",
     email: "info@example.com",
-    discord: "https://discord.gg/example"
+    discord: "https://discord.gg/example",
+    aboutHeader: "About Arnprior Board Gamers"
 };
 
 document.querySelectorAll("[data-config]").forEach(element => {
