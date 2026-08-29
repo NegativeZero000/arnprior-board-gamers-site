@@ -1,7 +1,7 @@
 const siteConfig = {
     name: "Arnprior Board Gamers",
     tagline: "Best Community Group in Town",
-    description: "A weekly hangout to socialize, hang out and most importantly, play board games",
+    description: "A weekly meet up to socialize, hang out and most importantly, play board games",
     email: "info@example.com",
     discord: "https://discord.gg/example"
 };
