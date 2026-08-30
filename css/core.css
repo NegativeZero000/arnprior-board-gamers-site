@@ -15,6 +15,8 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --themeColorOne: #3d7da3;
+    --themeColorTwo: #81a43e; 
 }
 
 body {
@@ -64,3 +66,11 @@ body.dark-mode {
     color: var(--bodyTextColor);
 }
                             
+.filter-theme-color-one{
+    filter: invert(41%) sepia(70%) saturate(371%) hue-rotate(158deg) brightness(95%) contrast(91%);
+}
+    
+.filter-theme-color-two{
+    filter: invert(60%) sepia(58%) saturate(429%) hue-rotate(39deg) brightness(88%) contrast(86%);
+}
+    

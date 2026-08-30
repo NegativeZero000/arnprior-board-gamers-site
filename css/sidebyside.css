@@ -103,8 +103,10 @@
   #sbsr-1475 .cs-image-group {
     /* font size scaling. Everything inside the group is in ems so they pull their value for em from the parent (this group div) and when the font is set to a vw, it scales the whole section down and grows proportionally with the screen width, stopping at the final em value declared in the second slot for the min function. */
     font-size: min(2.25vw, .83em);
-    width: 40.75em;
-    min-height: 45em;
+    width: 650px;
+    height: 650px;
+    /* width: 40.75em;
+    min-height: 45em; */
     display: flex;
     justify-content: center;
     position: relative;
@@ -114,8 +116,8 @@
     width: 33.875em;
     height: auto;
     border-radius: 15.625em;
-    border: 0.625em solid #ffd3c6;
-    background-color: #FFD3C6;
+    border: 0.625em solid var(--themeColorOne);
+    background-color:var(--themeColorOne);
     overflow: hidden;
     display: block;
     position: relative;
