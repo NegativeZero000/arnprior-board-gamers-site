@@ -65,6 +65,10 @@ body.dark-mode {
     margin: 0 auto;
     color: var(--bodyTextColor);
 }
+
+.cs-text-justify {
+    text-align: justify;
+}
                             
 .filter-theme-color-one{
     filter: invert(41%) sepia(70%) saturate(371%) hue-rotate(158deg) brightness(95%) contrast(91%);
