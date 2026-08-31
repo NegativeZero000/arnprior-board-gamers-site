@@ -549,9 +549,6 @@
         /* makes it turn white */
         filter: grayscale(1) brightness(1000%);
     }
-    body.dark-mode #cs-navigation .cs-social-link {
-        background-color: #d2d2d2;
-    }
 
     body.dark-mode #cs-navigation .cs-li-link,
     body.dark-mode #cs-navigation .cs-phone {
