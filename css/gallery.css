@@ -33,6 +33,9 @@
   #gallery-404 .cs-title {
     max-width: 20ch;
   }
+    #gallery-404 .cs-topper {
+    padding-top: 2em;
+  }
   #gallery-404 .cs-button-group {
     margin: 0;
     display: flex;
