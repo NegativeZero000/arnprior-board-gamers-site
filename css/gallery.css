@@ -202,16 +202,16 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #gallery-404 .cs-topper {
+  /* body.dark-mode #gallery-404 .cs-topper {
     color: var(--primaryLight);
-  }
+  } */
   body.dark-mode #gallery-404 .cs-title,
   body.dark-mode #gallery-404 .cs-text,
   body.dark-mode #gallery-404 .cs-button {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #gallery-404 .cs-button.cs-active {
+  /* body.dark-mode #gallery-404 .cs-button.cs-active {
     color: var(--primaryLight);
-  }
+  } */
 }
                                 
