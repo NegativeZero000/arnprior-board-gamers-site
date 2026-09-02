@@ -15,6 +15,7 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionTopPadding: clamp(3.75rem, 7.82vw, 6.25rem);
     --themeColorOne: #3d7da3;
     --themeColorTwo: #81a43e; 
 }
