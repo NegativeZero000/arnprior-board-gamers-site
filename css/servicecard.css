@@ -44,6 +44,7 @@
         box-sizing: border-box;
         padding: 1rem;
         border: 1px solid #e8e8e8;
+        border-radius: 1em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -123,7 +124,7 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #services-1188 .cs-card-group {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1.25rem;
     }
     #services-1188 .cs-item {

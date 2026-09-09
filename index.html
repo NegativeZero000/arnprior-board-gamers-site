@@ -5,7 +5,10 @@
         <link rel="stylesheet" href="/css/styles.css" />
         <link rel="stylesheet" href="/css/sidebyside.css" />
         <link rel="stylesheet" href="/css/servicecard.css" />
+        <link rel="stylesheet" href="/css/minigallery.css" />
+
         <script src="/js/navigation.js" defer></script>
+        <script src="/js/lightbox.js" defer></script>
         <script src="/js/darkmode.js" defer></script>
         <script src="/js/config.js" defer></script>
         <title>Arnprior Board Gamers</title>
@@ -48,48 +51,61 @@
                                 <a href="/index.html" class="cs-li-link cs-active" aria-current="page"> Home </a>
                             </li>
                             <li class="cs-li">
-                                <a href="/about.html" class="cs-li-link"> About Us </a>
+                                <a href="/gallery.html" class="cs-li-link"> Gallery </a>
                             </li>
                             <li class="cs-li">
-                                <a href="/gallery.html" class="cs-li-link"> Gallery </a>
+                                <div class="cs-social">
+                                    <a
+                                        href="https://www.facebook.com/groups/986963238821247"
+                                        class="cs-social-link"
+                                        aria-label="Visit our Facebook page"
+                                    >
+                                        <img
+                                            class="cs-social-icon"
+                                            src="src/assets/icons/icons8-facebook.svg"
+                                            alt=""
+                                            width="30"
+                                            height="30"
+                                            aria-hidden="true"
+                                            decoding="async"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://discord.gg/upMKNp8jcQ"
+                                        class="cs-social-link"
+                                        aria-label="Visit our Discord server"
+                                    >
+                                        <img
+                                            class="cs-social-icon"
+                                            src="src/assets/icons/icons8-discord.svg"
+                                            alt=""
+                                            width="30"
+                                            height="30"
+                                            aria-hidden="true"
+                                            decoding="async"
+                                        />
+                                    </a>
+                                    <a
+                                        id="email-link"
+                                        href="https://mailhide.io/e/9ATyLdcb"
+                                        class="cs-social-link"
+                                        aria-label="Send us an email"
+                                    >
+                                        <img
+                                            class="cs-social-icon"
+                                            src="src/assets/icons/email.svg"
+                                            alt=""
+                                            width="30"
+                                            height="30"
+                                            aria-hidden="true"
+                                            decoding="async"
+                                        />
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </nav>
-                <div class="cs-contact-group">
-                    <div class="cs-social">
-                        <a
-                            href="https://www.facebook.com/groups/986963238821247"
-                            class="cs-social-link"
-                            aria-label="Visit our Facebook page"
-                        >
-                            <img
-                                class="cs-social-icon"
-                                src="src\assets\icons\icons8-facebook.svg"
-                                alt=""
-                                width="30"
-                                height="30"
-                                aria-hidden="true"
-                                decoding="async"
-                            />
-                        </a>
-                        <a
-                            href="https://discord.gg/upMKNp8jcQ"
-                            class="cs-social-link"
-                            aria-label="Visit our Discord server"
-                        >
-                            <img
-                                class="cs-social-icon"
-                                src="src\assets\icons\icons8-discord.svg"
-                                alt=""
-                                width="30"
-                                height="30"
-                                aria-hidden="true"
-                                decoding="async"
-                            />
-                        </a>
-                    </div>
-                </div>
                 <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
                 <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
                     <svg
@@ -141,11 +157,9 @@
                 </div>
                 <!-- Right Content Section-->
                 <div class="cs-content">
-                    <h2 class="cs-title" style="padding-bottom: 0.5em">
-                        Welcome to the Arnprior Board Gamers Community Group
-                    </h2>
+                    <h2 class="cs-title">Welcome to the Arnprior Board Gamers Community Group</h2>
                     <p class="cs-text cs-text-justify">
-                        We are just a bunch of people in Arnprior, and surrounding communities, that get together once
+                        We are just a bunch of people from Arnprior, and surrounding communities, that get together once
                         week to play a variety of board games. There is usually a small games library available and
                         people are encouraged to bring games they want to play.
                     </p>
@@ -204,6 +218,16 @@
                             </svg>
                             6:00pm to 10:00pm
                         </li>
+                        <li class="cs-li">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <!-- Icon from Gridicons by Automattic - https://github.com/Automattic/gridicons/blob/trunk/LICENSE.md -->
+                                <path
+                                    fill="#c2b73d"
+                                    d="M2 5v14h20V5zm5 12a3 3 0 0 0-3-3v-4a3 3 0 0 0 3-3h10a3 3 0 0 0 3 3v4a3 3 0 0 0-3 3zm5-8c1.1 0 2 1.3 2 3s-.9 3-2 3s-2-1.3-2-3s.9-3 2-3"
+                                />
+                            </svg>
+                            Free to attend
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -216,138 +240,157 @@
                 <ul class="cs-card-group">
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img
-                                class="cs-icon"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/engineering%201%20red.svg"
-                                loading="lazy"
-                                decoding="async"
-                                alt="icon"
-                                width="33"
-                                height="38"
-                                aria-hidden="true"
-                            />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16 16">
+                                <!-- Icon from Bootstrap Icons by The Bootstrap Authors - https://github.com/twbs/icons/blob/main/LICENSE.md -->
+                                <path
+                                    fill="#3d7da3"
+                                    d="M7 14s-1 0-1-1s1-4 5-4s5 3 5 4s-1 1-1 1zm4-6a3 3 0 1 0 0-6a3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5"
+                                />
+                            </svg>
                         </picture>
                         <!-- Text Grouped For Flexbox-->
                         <div class="cs-text-group">
-                            <h3 class="cs-h3">Check Engine Light</h3>
+                            <h3 class="cs-h3">All Are Welcome</h3>
                             <p class="cs-item-text">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
+                                We are a relaxed and inclusive group. Everyone has a seat at our tables
                             </p>
                         </div>
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img
-                                class="cs-icon"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brake-red.svg"
-                                loading="lazy"
-                                decoding="async"
-                                alt="icon"
-                                width="33"
-                                height="38"
-                                aria-hidden="true"
-                            />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 512 512">
+                                <!-- Icon from Game Icons by GameIcons - https://github.com/game-icons/icons/blob/master/license.txt -->
+                                <path
+                                    fill="#81a43e"
+                                    d="M256 54.99c-27 0-46.418 14.287-57.633 32.23c-10.03 16.047-14.203 34.66-15.017 50.962c-30.608 15.135-64.515 30.394-91.815 45.994c-14.32 8.183-26.805 16.414-36.203 25.26C45.934 218.28 39 228.24 39 239.99c0 5 2.44 9.075 5.19 12.065c2.754 2.99 6.054 5.312 9.812 7.48c7.515 4.336 16.99 7.95 27.412 11.076c15.483 4.646 32.823 8.1 47.9 9.577c-14.996 25.84-34.953 49.574-52.447 72.315C56.65 378.785 39 403.99 39 431.99c0 4-.044 7.123.31 10.26c.355 3.137 1.256 7.053 4.41 10.156s7.017 3.938 10.163 4.28c3.146.345 6.315.304 10.38.304h111.542c8.097 0 14.026.492 20.125-3.43c6.1-3.92 8.324-9.275 12.67-17.275l.088-.16l.08-.166s9.723-19.77 21.324-39.388c5.8-9.808 12.097-19.576 17.574-26.498c2.74-3.46 5.304-6.204 7.15-7.754c.564-.472.82-.56 1.184-.76c.363.2.62.288 1.184.76c1.846 1.55 4.41 4.294 7.15 7.754c5.477 6.922 11.774 16.69 17.574 26.498c11.6 19.618 21.324 39.387 21.324 39.387l.08.165l.088.16c4.346 8 6.55 13.323 12.61 17.254c6.058 3.93 11.974 3.45 19.957 3.45H448c4 0 7.12.043 10.244-.304s6.998-1.21 10.12-4.332c3.12-3.122 3.984-6.997 4.33-10.12c.348-3.122.306-6.244.306-10.244c0-28-17.65-53.205-37.867-79.488c-17.493-22.74-37.45-46.474-52.447-72.315c15.077-1.478 32.417-4.93 47.9-9.576c10.422-3.125 19.897-6.74 27.412-11.075c3.758-2.168 7.058-4.49 9.81-7.48S473 244.988 473 239.988c0-11.75-6.934-21.71-16.332-30.554c-9.398-8.846-21.883-17.077-36.203-25.26c-27.3-15.6-61.207-30.86-91.815-45.994c-.814-16.3-4.988-34.915-15.017-50.96C302.418 69.276 283 54.99 256 54.99"
+                                />
+                            </svg>
                         </picture>
                         <!-- Text Grouped For Flexbox-->
                         <div class="cs-text-group">
-                            <h3 class="cs-h3">Brake Repair Service</h3>
+                            <h3 class="cs-h3">No Experience Needed</h3>
                             <p class="cs-item-text">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
+                                New to board game? No problem. We'll help you learn and jump right in.
                             </p>
                         </div>
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img
-                                class="cs-icon"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/air-conditioner-red.svg"
-                                loading="lazy"
-                                decoding="async"
-                                alt="icon"
-                                width="33"
-                                height="38"
-                                aria-hidden="true"
-                            />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 20 20">
+                                <!-- Icon from Jam Icons by Michael Amprimo - https://github.com/cyberalien/jam-backup/blob/main/LICENSE -->
+                                <path
+                                    fill="#3d7da3"
+                                    d="M11 0a3 3 0 0 1 3 3v3h3a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3v-3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3zm6 8H9a1 1 0 0 0-.993.883L8 9v8a1 1 0 0 0 .883.993L9 18h8a1 1 0 0 0 .993-.883L18 17V9a1 1 0 0 0-.883-.993zm-7 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2m6 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2m-3-3a1 1 0 1 1 0 2a1 1 0 0 1 0-2m-1.883-9.993L11 2H3a1 1 0 0 0-.993.883L2 3v8a1 1 0 0 0 .883.993L3 12h3V9a3 3 0 0 1 3-3h3V3a1 1 0 0 0-.883-.993M10 9a1 1 0 1 1 0 2a1 1 0 0 1 0-2m6 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2M4.513 8.993a1 1 0 1 1 0 2a1 1 0 0 1 0-2m0-3a1 1 0 1 1 0 2a1 1 0 0 1 0-2m0-3a1 1 0 1 1 0 2a1 1 0 0 1 0-2m5 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2"
+                                />
+                            </svg>
                         </picture>
                         <!-- Text Grouped For Flexbox-->
                         <div class="cs-text-group">
-                            <h3 class="cs-h3">AC Repair Service</h3>
-                            <p class="cs-item-text">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </p>
+                            <h3 class="cs-h3">
+                                Bring a Game<br />
+                                or Just show up
+                            </h3>
+                            <p class="cs-item-text">Share a favorite or try something from our collections</p>
                         </div>
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img
-                                class="cs-icon"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/motor%201%20red.svg"
-                                loading="lazy"
-                                decoding="async"
-                                alt="icon"
-                                width="33"
-                                height="38"
-                                aria-hidden="true"
-                            />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                <!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE -->
+                                <path
+                                    fill="#81a43e"
+                                    d="M13 20V8.8c.5-.2 1-.5 1.3-.9l3.5 1.3l-2.9 6.8c-.5 2 1 3 3.5 3s4.1-1 3.5-3l-2.6-6.3l.9.3l.7-1.9L15 6c0-1.2-.7-2.4-2-2.9c-1.2-.5-2.5 0-3.3.9L3.9 2l-.7 1.8l1.6.6L2.1 11c-.5 2 1 3 3.5 3s4.1-1 3.5-3L6.6 5.1L9 6c0 1.2.7 2.4 2 2.9V20H2v2h20v-2zm6.9-4h-3l1.5-3.8zM7.1 11h-3l1.5-3.8zm4-5.3c.2-.5.8-.8 1.3-.6s.8.8.6 1.3s-.8.8-1.3.6s-.8-.8-.6-1.3"
+                                />
+                            </svg>
                         </picture>
                         <!-- Text Grouped For Flexbox-->
                         <div class="cs-text-group">
-                            <h3 class="cs-h3">Oil Filter Change</h3>
-                            <p class="cs-item-text">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="cs-item">
-                        <picture class="cs-picture">
-                            <img
-                                class="cs-icon"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/alloy-wheel-red.svg"
-                                loading="lazy"
-                                decoding="async"
-                                alt="icon"
-                                width="33"
-                                height="38"
-                                aria-hidden="true"
-                            />
-                        </picture>
-                        <!-- Text Grouped For Flexbox-->
-                        <div class="cs-text-group">
-                            <h3 class="cs-h3">Changing Wheel</h3>
-                            <p class="cs-item-text">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="cs-item">
-                        <picture class="cs-picture">
-                            <img
-                                class="cs-icon"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/contamination-red.svg"
-                                loading="lazy"
-                                decoding="async"
-                                alt="icon"
-                                width="33"
-                                height="38"
-                                aria-hidden="true"
-                            />
-                        </picture>
-                        <!-- Text Grouped For Flexbox-->
-                        <div class="cs-text-group">
-                            <h3 class="cs-h3">Emissions Repair</h3>
-                            <p class="cs-item-text">
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </p>
+                            <h3 class="cs-h3">From Heavy to Party</h3>
+                            <p class="cs-item-text">We enjoy everything from quick fillers to deep thinkers</p>
                         </div>
                     </li>
                 </ul>
-                <a href="" class="cs-button-solid">Book Appointment</a>
+            </div>
+        </section>
+        <!-- ============================================ -->
+        <!--                   Gallery                    -->
+        <!-- ============================================ -->
+
+        <section id="gallery-1152">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Good Games, Great Company</span>
+                </div>
+                <div class="cs-gallery">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="src\assets\images\gallery\gamenight_6.jpg" />
+                        <source media="(min-width: 601px)" srcset="src\assets\images\gallery\gamenight_6.jpg" />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="src\assets\images\gallery\gamenight_6.jpg"
+                            alt="gallery"
+                            width="272"
+                            height="320"
+                        />
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="src\assets\images\gallery\gamenight_2.jpg" />
+                        <source media="(min-width: 601px)" srcset="src\assets\images\gallery\gamenight_2.jpg" />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="src\assets\images\gallery\gamenight_2.jpg"
+                            alt="gallery"
+                            width="272"
+                            height="320"
+                        />
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="src\assets\images\gallery\gamenight_3.jpg" />
+                        <source media="(min-width: 601px)" srcset="src\assets\images\gallery\gamenight_3.jpg" />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="src\assets\images\gallery\gamenight_3.jpg"
+                            alt="gallery"
+                            width="272"
+                            height="320"
+                        />
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="src\assets\images\gallery\gamenight_4.jpg" />
+                        <source media="(min-width: 601px)" srcset="src\assets\images\gallery\gamenight_4.jpg" />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="src\assets\images\gallery\gamenight_4.jpg"
+                            alt="gallery"
+                            width="272"
+                            height="320"
+                        />
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="src\assets\images\gallery\gamenight_5.jpg" />
+                        <source media="(min-width: 601px)" srcset="src\assets\images\gallery\gamenight_5.jpg" />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="src\assets\images\gallery\gamenight_5.jpg"
+                            alt="gallery"
+                            width="272"
+                            height="320"
+                        />
+                    </picture>
+                </div>
+            </div>
+            <div class="cs-button-group">
+                <a href="" class="cs-button-solid cs-button1">Read More</a>
             </div>
         </section>
     </body>

@@ -11,3 +11,15 @@ document.querySelectorAll("[data-config]").forEach(element => {
     const key = element.dataset.config;
     element.textContent = siteConfig[key];
 });
+
+const emailLink = document.getElementById("email-link");
+
+emailLink.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    window.open(
+        "https://mailhide.io/e/9ATyLdcb",
+        "mailhidepopup",
+        "width=580,height=635"
+    );
+});

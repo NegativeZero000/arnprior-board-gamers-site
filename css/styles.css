@@ -160,9 +160,9 @@
         height: auto;
         display: block;
     }
-    #cs-navigation .cs-social {
+    /* #cs-navigation .cs-social {
         display: none;
-    }
+    } */
     #cs-navigation .cs-toggle {
         /* 44px - 48px */
         width: clamp(2.75rem, 6vw, 3rem);
@@ -560,4 +560,29 @@
     body.dark-mode #cs-navigation .cs-li-link:before {
         background-color: var(--primaryLight);
     }
+}
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.85);
+    padding: 2rem;
+
+    cursor: zoom-out;
+}
+
+.image-lightbox img {
+    max-width: 95vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    cursor: default;
 }
