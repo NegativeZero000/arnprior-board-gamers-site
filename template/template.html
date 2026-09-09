@@ -3,18 +3,20 @@
     <head>
         <link rel="stylesheet" href="/css/core.css" />
         <link rel="stylesheet" href="/css/styles.css" />
-        <script src="js/navigation.js" defer></script>
-        <script src="js/darkmode.js" defer></script>
-        <script src="js/config.js" defer></script>
+
+        <script src="/js/navigation.js" defer></script>
+        <script src="/js/lightbox.js" defer></script>
+        <script src="/js/darkmode.js" defer></script>
+        <script src="/js/config.js" defer></script>
         <title>Arnprior Board Gamers</title>
     </head>
     <body>
         <header id="cs-navigation">
             <div class="cs-container">
                 <!--Nav Logo-->
-                <a href="" class="cs-logo" aria-label="Return to home page">
+                <a href="index.html" class="cs-logo" aria-label="return to home page">
                     <img
-                        src="src/assets/abg_logo_w_text.svg"
+                        src="src/assets/icons/abg_logo_w_text.svg"
                         alt=""
                         width="400"
                         height="100"
@@ -43,43 +45,63 @@
                     <div class="cs-ul-wrapper" id="cs-ul-wrapper">
                         <ul class="cs-ul">
                             <li class="cs-li">
-                                <a href="index.html" class="cs-li-link cs-active" aria-current="page"> Home </a>
+                                <a href="/index.html" class="cs-li-link cs-active" aria-current="page"> Home </a>
                             </li>
                             <li class="cs-li">
-                                <a href="about.html" class="cs-li-link"> About Us </a>
+                                <a href="/gallery.html" class="cs-li-link"> Gallery </a>
                             </li>
                             <li class="cs-li">
-                                <a href="gallery.html" class="cs-li-link"> Gallery </a>
+                                <div class="cs-social">
+                                    <a
+                                        href="https://www.facebook.com/groups/986963238821247"
+                                        class="cs-social-link"
+                                        aria-label="Visit our Facebook page"
+                                    >
+                                        <img
+                                            class="cs-social-icon"
+                                            src="src/assets/icons/icons8-facebook.svg"
+                                            alt=""
+                                            width="30"
+                                            height="30"
+                                            aria-hidden="true"
+                                            decoding="async"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://discord.gg/upMKNp8jcQ"
+                                        class="cs-social-link"
+                                        aria-label="Visit our Discord server"
+                                    >
+                                        <img
+                                            class="cs-social-icon"
+                                            src="src/assets/icons/icons8-discord.svg"
+                                            alt=""
+                                            width="30"
+                                            height="30"
+                                            aria-hidden="true"
+                                            decoding="async"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://mailhide.io/e/9ATyLdcb"
+                                        class="cs-social-link email-link"
+                                        aria-label="Send us an email"
+                                    >
+                                        <img
+                                            class="cs-social-icon"
+                                            src="src/assets/icons/email.svg"
+                                            alt=""
+                                            width="30"
+                                            height="30"
+                                            aria-hidden="true"
+                                            decoding="async"
+                                        />
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </nav>
-                <div class="cs-contact-group">
-                    <div class="cs-social">
-                        <a href="" class="cs-social-link" aria-label="Visit our Facebook page">
-                            <img
-                                class="cs-social-icon"
-                                src="src\assets\icons\icons8-facebook.svg"
-                                alt=""
-                                width="30"
-                                height="30"
-                                aria-hidden="true"
-                                decoding="async"
-                            />
-                        </a>
-                        <a href="" class="cs-social-link" aria-label="Visit our Discord server">
-                            <img
-                                class="cs-social-icon"
-                                src="src\assets\icons\icons8-discord.svg"
-                                alt=""
-                                width="30"
-                                height="30"
-                                aria-hidden="true"
-                                decoding="async"
-                            />
-                        </a>
-                    </div>
-                </div>
                 <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
                 <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
                     <svg
@@ -106,5 +128,74 @@
                 </button>
             </div>
         </header>
+
+        <!-- ============================================ -->
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="cs-footer-1292">
+            <div class="cs-container">
+                <!-- Logo Group -->
+                <div class="cs-logo-group">
+                    <a aria-label="go back to home" class="cs-logo" href="/index.html">
+                        <img
+                            class="cs-logo-img"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="src/assets/icons/abg_logo_w_text.svg"
+                            alt="logo"
+                            width="240"
+                            height="32"
+                        />
+                    </a>
+                    <p class="cs-text">Come play board games with us.</p>
+                    <a href="https://mailhide.io/e/9ATyLdcb" class="cs-link email-link">
+                        <img
+                            class="cs-link-icon"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            src="/src/assets/icons/email.svg"
+                            alt="icon"
+                            width="24"
+                            height="24"
+                        />
+                        a.....@dragonpower.ca
+                    </a>
+                </div>
+                <!-- Links -->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Site Map</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="/gallery.html">Gallery</a>
+                    </li>
+                </ul>
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Contact</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="https://www.facebook.com/groups/986963238821247">Facebook</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="https://discord.gg/upMKNp8jcQ">Discord</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link email-link" href="https://mailhide.io/e/9ATyLdcb">Email</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <span class="cs-copyright">Copyright &copy; 2026 All Right Reserved. </span>
+            </div>
+            <!--Floating Cirlces-->
+            <div class="cs-floater" aria-hidden="true"></div>
+        </footer>
     </body>
 </html>
