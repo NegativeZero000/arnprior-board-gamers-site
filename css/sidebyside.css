@@ -20,8 +20,8 @@
         gap: clamp(3rem, 4vw, 4rem);
     }
     #sbsr-1475 .cs-title {
-      padding-bottom: 0.5em;
-      color: var(--themeColorOne);
+        padding-bottom: 0.5em;
+        color: var(--themeColorOne);
     }
     #sbsr-1475 .cs-content {
         /* set text align to left if content needs to be left aligned */
@@ -80,7 +80,7 @@
         margin: 0;
         color: #fff;
         padding: 0 3rem;
-        border-radius: 1.875rem;  
+        border-radius: 1.875rem;
         background-color: var(--primary);
         display: inline-block;
         position: relative;
