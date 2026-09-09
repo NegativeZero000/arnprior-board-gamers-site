@@ -12,14 +12,15 @@ document.querySelectorAll("[data-config]").forEach(element => {
     element.textContent = siteConfig[key];
 });
 
-const emailLink = document.getElementById("email-link");
+/* Convert Email Links into Popup Generators */
+document.querySelectorAll(".email-link").forEach(emailLink => {
+    emailLink.addEventListener("click", event => {
+        event.preventDefault();
 
-emailLink.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    window.open(
-        "https://mailhide.io/e/9ATyLdcb",
-        "mailhidepopup",
-        "width=580,height=635"
-    );
+        window.open(
+            "https://mailhide.io/e/9ATyLdcb",
+            "mailhidepopup",
+            "width=580,height=635"
+        );
+    });
 });
