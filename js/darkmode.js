@@ -1,5 +1,4 @@
-// Helper functions to toggle the dark-mode class
-
+// Helper function to change logo to match viewing mode
 function updateLogo() {
     const logos = document.querySelectorAll(".cs-logo");
 
@@ -14,6 +13,7 @@ function updateLogo() {
     });
 }
 
+// Helper functions to toggle the dark-mode class
 function enableDarkMode() {
     document.body.classList.add("dark-mode");
     localStorage.setItem("theme", "dark");
