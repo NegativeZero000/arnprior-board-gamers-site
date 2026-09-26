@@ -737,7 +737,7 @@
         height: 31.625rem;
         margin-left: 34.375rem;
         border-radius: 50%;
-        border: 2px solid var(--primary);
+        border: 2px solid var(--themeColorTwo);
         opacity: 0.1;
         display: none;
         position: absolute;
@@ -749,7 +749,7 @@
         content: "";
         width: 44.6875rem;
         height: 44.6875rem;
-        border: 2px solid var(--primary);
+        border: 2px solid var(--themeColorOne);
         border-radius: 50%;
         opacity: 0.6;
         position: absolute;
@@ -762,7 +762,7 @@
         content: "";
         width: 60.1875rem;
         height: 60.1875rem;
-        border: 2px solid var(--primary);
+        border: 2px solid var(--themeColorOne);
         border-radius: 50%;
         opacity: 0.3;
         position: absolute;
